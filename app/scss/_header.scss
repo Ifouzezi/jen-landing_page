@@ -1,12 +1,14 @@
 .header {
 
     nav{
+        margin-top: 11px;
         padding: 24px;
     }
    
     &__logo{
         img {
-       
+            width: 6.375rem;
+            height: 1.5rem;
         }
     }
    
@@ -25,6 +27,37 @@
 
     }
 
+    &__links {
+        position: relative;
+        color: $text1;
+        transition: color 300ms ease-in-out;
+
+        &:not(:last-child){
+            margin-right: 80px;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 2px;
+            left: 0;
+            right: 0;
+            bottom: -10px;
+            background: $brandcolor;
+            opacity: 0;
+            transition: opacity 300ms ease-in-out;
+        }
+
+        &:hover {
+            color: $brandcolor;
+    
+            &::before {
+              opacity: 1;
+            }
+        }
+    }
+    
     &__cta{
         color: $text2;
     }
