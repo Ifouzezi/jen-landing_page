@@ -81,7 +81,17 @@ button,
     display: none;
   }
   display: flex;
-  
+}
+
+.header nav {
+  @include breakpoint-down(medium) {
+    margin-top: 0px;
+  }
+}
+.header nav {
+  @include breakpoint-up(large) {
+    margin-top: 11px;
+  }
 }
 
 .hide-for-desktop {
