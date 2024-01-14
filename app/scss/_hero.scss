@@ -1,0 +1,49 @@
+.hero {
+  
+    .container {
+  
+      @include breakpoint-up(large){  
+
+      } 
+       
+    }
+
+    &__background {
+        background-color: $bgcolor;
+    }
+  
+    &__image {
+        
+        background-image: url('/assets/Hero-mobile.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 21.5rem;
+  
+      @include breakpoint-up(medium){
+        
+      }
+  
+      @include breakpoint-up(large){
+        
+      }
+  
+      &::before, &::after {
+        
+      }
+  
+      &::before { 
+  
+      }
+  
+      &::after {
+        
+      }
+    }
+  
+    &__text {
+      
+    }
+    
+}
+  

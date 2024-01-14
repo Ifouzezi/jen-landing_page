@@ -27,7 +27,7 @@
         right: 0px;
         bottom: 0px;
         left: 0px;
-        background-image: linear-gradient($brandcolor, transparent);
+        background-image: linear-gradient($accent, transparent);
 
         &.fade-in {
             display: block;
@@ -64,6 +64,7 @@
             padding: 0.625rem;
             color: $text1;
             text-align: center;
+            
         }
     }
 

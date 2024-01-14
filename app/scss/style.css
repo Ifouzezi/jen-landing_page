@@ -87,7 +87,6 @@ a:hover {
   align-items: center;
 }
 
-button,
 .button {
   position: relative;
   display: inline-block;
@@ -101,7 +100,6 @@ button,
   transition: opacity 300ms ease-in-out;
   overflow: hidden;
 }
-button::before,
 .button::before {
   content: "";
   position: absolute;
@@ -113,7 +111,6 @@ button::before,
   opacity: 0;
   transition: opacity 150ms ease-in-out;
 }
-button:hover::before,
 .button:hover::before {
   opacity: 1;
 }
@@ -141,6 +138,12 @@ button:hover::before,
   }
 }
 
+@media (max-width: 63.9375em) {
+  .button {
+    margin-left: 0px;
+  }
+}
+
 @media (min-width: 64em) {
   .header nav {
     padding-top: 2.1875rem;
@@ -151,6 +154,10 @@ button:hover::before,
   .hide-for-desktop {
     display: none;
   }
+}
+
+.colorh {
+  color: hsl(0, 0%, 24%);
 }
 
 .header {
@@ -175,7 +182,7 @@ button:hover::before,
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: linear-gradient(hsl(220, 85%, 29%), transparent);
+  background-image: linear-gradient(hsl(214, 37%, 22%), transparent);
 }
 .header .overlay.fade-in {
   display: block;
@@ -242,4 +249,15 @@ button:hover::before,
 }
 .header__cta {
   color: hsl(0, 0%, 100%);
+}
+
+.hero__background {
+  background-color: hsl(216, 29%, 93%);
+}
+.hero__image {
+  background-image: url("/assets/Hero-mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 21.5rem;
 }/*# sourceMappingURL=style.css.map */
