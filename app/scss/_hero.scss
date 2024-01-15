@@ -1,5 +1,8 @@
 .hero {
-  
+  @include breakpoint-up(large){    
+    display: flex;
+    align-items: center;
+  }
     .container {
   
       @include breakpoint-up(large){  
@@ -25,6 +28,11 @@
       }
   
       @include breakpoint-up(large){
+        flex: 3;
+        order: 2;
+        height: 41.3125rem;
+        min-width: 42.375rem;
+        
         
       }
   
@@ -42,8 +50,25 @@
     }
   
     &__text {
-      
+      text-align: center;
+
+      @include breakpoint-up(large){
+        flex: 2;
+        order: 1;
+        text-align: left;
+      }
     }
     
+    h1 {
+      font-size: 2.8125rem;
+      margin-top: 0px;
+      margin-bottom: 1.5rem;
+      width: 21ch;
+    }
+
+    .ctabtn {
+      font-weight: 700;
+      gap:1.9375rem;
+    }
 }
   

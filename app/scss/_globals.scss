@@ -1,6 +1,7 @@
 html {
     font-size: 100%;
     box-sizing: border-box;
+   
   }
   
   *,
@@ -11,8 +12,50 @@ html {
   
   //Spacing
   .container {
-    padding-left: 6.2813rem;
-    padding-right: 6.2813rem;
+    max-width: 77.5rem;
+    margin: 0 auto;
+
+    &--pall {
+      padding-top: 4.375rem;
+      padding-right: 1.5rem;
+      padding-bottom: 4.375rem;
+      padding-left: 1.5rem;
+  
+      @include breakpoint-up(large) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+      }
+    }
+    &--plr {
+      @include breakpoint-up(large) {
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+    }
+    &--px {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+    }
+    &--pt {
+      padding-top: 4.375rem;
+  
+      @include breakpoint-up(large) {
+        padding-top: 6rem;
+      }
+    }
+    &--pr {
+      padding-right: 1.5rem;
+    }
+    &--pb {
+      padding-bottom: 4.375rem;
+  
+      @include breakpoint-up(large) {
+        padding-bottom: 6rem;
+      }
+    }
+    &--pl {
+      padding-left: 1.5rem;
+    }
   }
 
   body {
@@ -94,8 +137,10 @@ html {
 
 .container {
   @include breakpoint-down(medium) {
-    padding-left: 1.5rem;
+    padding-top: 4.375rem;
     padding-right: 1.5rem;
+    padding-bottom: 4.375rem;
+    padding-left: 1.5rem;
   }
 }
 

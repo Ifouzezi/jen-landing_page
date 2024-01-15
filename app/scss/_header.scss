@@ -1,4 +1,6 @@
 .header {
+
+    background: $bgcolor;
     // Hamburger overlay
     &.open {
 
@@ -39,7 +41,7 @@
     }
 
     nav{
-        background: white;
+        
     }
    
     &__logo{
