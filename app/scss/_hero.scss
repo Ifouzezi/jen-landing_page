@@ -22,6 +22,7 @@
         background-repeat: no-repeat;
         background-position: center center;
         min-height: 21.5rem;
+        margin-bottom: 1.5rem;
   
       @include breakpoint-up(medium){
         
@@ -30,8 +31,8 @@
       @include breakpoint-up(large){
         flex: 3;
         order: 2;
-        height: 41.3125rem;
-        min-width: 42.375rem;
+        height: 35.313rem;
+        
         
         
       }
@@ -56,19 +57,27 @@
         flex: 2;
         order: 1;
         text-align: left;
+        width: 32.8125rem;
       }
     }
     
-    h1 {
-      font-size: 2.8125rem;
-      margin-top: 0px;
-      margin-bottom: 1.5rem;
-      width: 21ch;
-    }
+    p {
+      line-height: 1.5;
+      margin-bottom: 2.25rem;
+
+        @include breakpoint-up(large){    
+          margin-bottom: 2.625rem;
+          width: 45ch;
+        }
+      }
 
     .ctabtn {
+      display: flex;
+      align-items: center;
       font-weight: 700;
       gap:1.9375rem;
     }
+
+ 
 }
   
