@@ -13,15 +13,22 @@
 
     &__background {
         background-color: $bgcolor;
-        margin-bottom: 10rem;
+        margin-bottom: 4rem;
+
+      @include breakpoint-up(large){  
+        margin-bottom: 7.75rem;
+        padding-bottom: 2.25rem;
+      } 
     }
+
     &__vector {
       position: absolute;
+      width: 14.3125rem;
+      height: 21.1875rem;
       translate: -50% -50%;
-      right: 47.5%;
-      top: 308px;
+      right: 48.5%;
+      top: 299px;
       z-index: 0;
-      height: auto;
     }
 
     &__image {
@@ -33,14 +40,15 @@
       min-height: 21.5rem;
       margin-bottom: 1.5rem;
       
-  
       @include breakpoint-up(medium){
-        
+        min-height: 41rem;
+        background-position: center 0%;
       }
   
       @include breakpoint-up(large){
         position: relative;
         max-width: 35.1875rem;
+        background-size: 113%;
         flex: 3;
         order: 2;
         height: 35.313rem;
@@ -61,6 +69,7 @@
     h3 {
       margin: 0;
       padding-bottom: 0.5rem;
+      color: $text2;
     }
 
     .boxer {
@@ -86,7 +95,7 @@
       order: 1;
       text-align: left;
       width: 32.8125rem;
-      margin-top: 4.5625rem;
+      margin-top: -2.437rem;
     }
   }
   
