@@ -62,7 +62,7 @@ html {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
-    font-size: $font-med;
+    font-size: 1rem;
     color: $text1;
     font-weight: 300;
     line-height: 1.3;
@@ -185,6 +185,15 @@ html {
   }
 }
 
+.ctabtn {
+  @include breakpoint-up(large) {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    gap:1.9375rem;
+  }
+}
+
 .hide-for-desktop {
   @include breakpoint-up(large) {
     display: none;
@@ -195,4 +204,9 @@ html {
 //Hero
 .colorh{
   color: $hero-text;
+}
+
+.position {
+    z-index: 2;
+    position: relative;
 }

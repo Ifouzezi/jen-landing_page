@@ -13,71 +13,93 @@
 
     &__background {
         background-color: $bgcolor;
+        margin-bottom: 10rem;
     }
-  
+    &__vector {
+      position: absolute;
+      translate: -50% -50%;
+      right: 47.5%;
+      top: 308px;
+      z-index: 0;
+      height: auto;
+    }
+
     &__image {
         
-        background-image: url('/assets/Hero-mobile.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        min-height: 21.5rem;
-        margin-bottom: 1.5rem;
+      background-image: url('/assets/Hero-mobile.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      min-height: 21.5rem;
+      margin-bottom: 1.5rem;
+      
   
       @include breakpoint-up(medium){
         
       }
   
       @include breakpoint-up(large){
+        position: relative;
+        max-width: 35.1875rem;
         flex: 3;
         order: 2;
         height: 35.313rem;
-        
-        
-        
-      }
-  
-      &::before, &::after {
-        
-      }
-  
-      &::before { 
-  
-      }
-  
-      &::after {
-        
       }
     }
+
+  &__detainer {
+    position: absolute;
+    top: 35.125rem;
+    right: 0;
+    padding: 1.5rem 5rem;
+    border-radius: 0.5rem;
+    height: 6.9375rem;
+    width: 38.9375rem;
+    background-color: $brandcolor;
+    color: $text2;
+
+    h3 {
+      margin: 0;
+      padding-bottom: 0.5rem;
+    }
+
+    .boxer {
+      width: 31.1875rem;
+      // height: 3.375rem;
+    } 
+
+    .details {
+      
+    }
+
+    .para {
+      width: 5rem;
+      margin: 0;
+    }
+  }
   
-    &__text {
-      text-align: center;
+  &__text {
+    text-align: center;
 
-      @include breakpoint-up(large){
-        flex: 2;
-        order: 1;
-        text-align: left;
-        width: 32.8125rem;
-      }
+    @include breakpoint-up(large){
+      flex: 2;
+      order: 1;
+      text-align: left;
+      width: 32.8125rem;
+      margin-top: 4.5625rem;
     }
-    
-    p {
-      line-height: 1.5;
-      margin-bottom: 2.25rem;
+  }
+  
+  p {
+    line-height: 1.5;
+    margin-bottom: 2.25rem;
 
-        @include breakpoint-up(large){    
-          margin-bottom: 2.625rem;
-          width: 45ch;
-        }
-      }
-
-    .ctabtn {
-      display: flex;
-      align-items: center;
-      font-weight: 700;
-      gap:1.9375rem;
+    @include breakpoint-up(large){    
+      margin-bottom: 2.625rem;
+      width: 45ch;
+      font-size: 1rem;
     }
-
+  }
  
 }
   

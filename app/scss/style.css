@@ -102,7 +102,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: hsl(0, 2%, 45%);
   font-weight: 300;
   line-height: 1.3;
@@ -217,6 +217,15 @@ a:hover {
 }
 
 @media (min-width: 64em) {
+  .ctabtn {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    gap: 1.9375rem;
+  }
+}
+
+@media (min-width: 64em) {
   .hide-for-desktop {
     display: none;
   }
@@ -224,6 +233,11 @@ a:hover {
 
 .colorh {
   color: hsl(0, 0%, 24%);
+}
+
+.position {
+  z-index: 2;
+  position: relative;
 }
 
 .header {
@@ -323,6 +337,15 @@ a:hover {
 }
 .hero__background {
   background-color: hsl(216, 29%, 93%);
+  margin-bottom: 10rem;
+}
+.hero__vector {
+  position: absolute;
+  translate: -50% -50%;
+  right: 47.5%;
+  top: 308px;
+  z-index: 0;
+  height: auto;
 }
 .hero__image {
   background-image: url("/assets/Hero-mobile.png");
@@ -334,10 +357,34 @@ a:hover {
 }
 @media (min-width: 64em) {
   .hero__image {
+    position: relative;
+    max-width: 35.1875rem;
     flex: 3;
     order: 2;
     height: 35.313rem;
   }
+}
+.hero__detainer {
+  position: absolute;
+  top: 35.125rem;
+  right: 0;
+  padding: 1.5rem 5rem;
+  border-radius: 0.5rem;
+  height: 6.9375rem;
+  width: 38.9375rem;
+  background-color: hsl(220, 85%, 29%);
+  color: hsl(0, 0%, 100%);
+}
+.hero__detainer h3 {
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+.hero__detainer .boxer {
+  width: 31.1875rem;
+}
+.hero__detainer .para {
+  width: 5rem;
+  margin: 0;
 }
 .hero__text {
   text-align: center;
@@ -348,6 +395,7 @@ a:hover {
     order: 1;
     text-align: left;
     width: 32.8125rem;
+    margin-top: 4.5625rem;
   }
 }
 .hero p {
@@ -358,11 +406,6 @@ a:hover {
   .hero p {
     margin-bottom: 2.625rem;
     width: 45ch;
+    font-size: 1rem;
   }
-}
-.hero .ctabtn {
-  display: flex;
-  align-items: center;
-  font-weight: 700;
-  gap: 1.9375rem;
 }/*# sourceMappingURL=style.css.map */
