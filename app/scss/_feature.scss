@@ -1,6 +1,12 @@
 .feature {
     text-align: center;
 
+    h2 {
+        @include breakpoint-up(medium){
+            font-size: 1.875rem;
+        }
+    }
+
     @include breakpoint-up(medium){
         text-align: left;
         margin-bottom: 2.75rem;
@@ -34,7 +40,11 @@
         
         @include breakpoint-up(medium){
             flex: 0 0 50%;
-            max-width: 22.917rem;
+            max-width: 20.917rem;
+        }
+
+        @include breakpoint-up(large){
+            max-width: 22.917rem
         }
     }
 

@@ -23,7 +23,6 @@ html {
   }
 
   h2 {
-    font-size: 1.875rem;
     line-height: 1.35;
     color: $hero-text;
     margin-top: 0px;
@@ -252,6 +251,13 @@ html {
   }
 }
 
+.gridser {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  height: 100vh
+}
+
 ul li {
   position: relative;
 }
@@ -264,4 +270,13 @@ ul li:before {
   width: 25px;
   height: 113px;
   background: url(/assets/bullet.svg);
+}
+
+.custom-image {
+  height: 8.1875rem;
+  width: 21rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  border-radius: 0.5rem;
 }
