@@ -14,10 +14,12 @@
     &__background {
         background-color: $bgcolor;
         margin-bottom: 4rem;
+        
 
       @include breakpoint-up(large){  
         margin-bottom: 7.75rem;
         padding-bottom: 2.25rem;
+        height: 38.75rem;
       } 
     }
 

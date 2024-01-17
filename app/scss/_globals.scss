@@ -16,11 +16,18 @@ html {
   
   //Text
   h1,
-  h2,
   h3 {
-    line-height: 1.15;
+    line-height: 1.35;
     color: $hero-text;
     margin-top: 0px;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+    line-height: 1.35;
+    color: $hero-text;
+    margin-top: 0px;
+    margin-bottom: 1.3125rem;
   }
 
   p {
@@ -125,6 +132,7 @@ html {
   border-radius: 5px;
   cursor: pointer;
   font-weight: 700;
+  font-size: 1.25rem;
   transition: opacity 300ms ease-in-out;
   overflow: hidden;
 
@@ -227,4 +235,33 @@ html {
 .position {
     z-index: 2;
     position: relative;
+}
+
+// Extra Design
+.center {
+  @include breakpoint-up(large) {
+    width: 27.06rem;
+    margin: auto;
+  }
+}
+
+.pack {
+  @include breakpoint-up(large) {
+    margin-top: 1.125rem;
+    margin-bottom: 2.75rem;
+  }
+}
+
+ul li {
+  position: relative;
+}
+
+ul li:before {
+    content: "";
+  position: absolute;
+  left: -33px;
+  top: 0px;
+  width: 25px;
+  height: 113px;
+  background: url(/assets/bullet.svg);
 }

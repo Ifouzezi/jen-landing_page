@@ -1,0 +1,76 @@
+.choose {
+
+    background-color: $brandcolor;
+    h2 {
+        color: $text2;
+        margin-bottom: 1.3125rem;
+    }
+
+    h3 {
+        color: $text2;
+        margin-bottom: 1.3125rem;
+        font-size: 1.125rem;
+    }
+
+    p {
+        color: $text2;
+        margin-bottom: 1.5625rem;
+        font-size: 1rem;
+    }
+
+    @include breakpoint-up(large){
+        text-align: center;
+        margin-bottom: 6.25rem;
+        padding-top: 3.625rem;
+        padding-bottom: 6.25rem;
+    }
+
+    &__intro {
+        margin-bottom: 1.75rem;
+    }
+
+    &__box {
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.875rem;
+
+        @include breakpoint-up(large) {
+            display: flex;
+        }
+    }
+
+    &__image {
+        grid-column: span 1;
+        height: 573px;
+        width: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-image: url('/assets/choose\ us.png');
+        border-radius: 8px;
+
+        @include breakpoint-up(medium){
+            
+        }
+
+        @include breakpoint-up(large) {
+            width: 38.125rem;
+            flex: 1;
+        }
+    }
+
+    &__text {
+
+        text-align: left;
+        grid-column: span 1;
+
+        @include breakpoint-up(large) {
+            padding-top: 3.625rem;
+            padding-right: 4.6875rem;
+            padding-bottom: 7.5rem;
+            padding-left: 2.125rem;
+            flex: 1;
+        }
+    }
+}

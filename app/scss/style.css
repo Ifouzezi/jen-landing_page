@@ -54,11 +54,18 @@ html {
 }
 
 h1,
-h2,
 h3 {
-  line-height: 1.15;
+  line-height: 1.35;
   color: hsl(0, 0%, 24%);
   margin-top: 0px;
+}
+
+h2 {
+  font-size: 1.875rem;
+  line-height: 1.35;
+  color: hsl(0, 0%, 24%);
+  margin-top: 0px;
+  margin-bottom: 1.3125rem;
 }
 
 p {
@@ -158,6 +165,7 @@ a:hover {
   border-radius: 5px;
   cursor: pointer;
   font-weight: 700;
+  font-size: 1.25rem;
   transition: opacity 300ms ease-in-out;
   overflow: hidden;
 }
@@ -255,6 +263,34 @@ a:hover {
 .position {
   z-index: 2;
   position: relative;
+}
+
+@media (min-width: 64em) {
+  .center {
+    width: 27.06rem;
+    margin: auto;
+  }
+}
+
+@media (min-width: 64em) {
+  .pack {
+    margin-top: 1.125rem;
+    margin-bottom: 2.75rem;
+  }
+}
+
+ul li {
+  position: relative;
+}
+
+ul li:before {
+  content: "";
+  position: absolute;
+  left: -33px;
+  top: 0px;
+  width: 25px;
+  height: 113px;
+  background: url(/assets/bullet.svg);
 }
 
 .header {
@@ -360,6 +396,7 @@ a:hover {
   .hero__background {
     margin-bottom: 7.75rem;
     padding-bottom: 2.25rem;
+    height: 38.75rem;
   }
 }
 .hero__vector {
@@ -448,6 +485,13 @@ a:hover {
 @media (min-width: 40em) {
   .feature {
     text-align: left;
+    margin-bottom: 2.75rem;
+  }
+}
+@media (min-width: 64em) {
+  .feature {
+    text-align: center;
+    margin-bottom: 6.25rem;
   }
 }
 .feature__box {
@@ -457,6 +501,7 @@ a:hover {
   .feature__box {
     display: flex;
     flex-wrap: wrap;
+    gap: 1.375rem;
   }
 }
 .feature__intro {
@@ -472,6 +517,7 @@ a:hover {
 @media (min-width: 40em) {
   .feature__item {
     flex: 0 0 50%;
+    max-width: 22.917rem;
   }
 }
 .feature__icon {
@@ -479,4 +525,75 @@ a:hover {
 }
 .feature__title {
   margin-bottom: 1rem;
+}
+.feature p {
+  margin-bottom: 2.5625rem;
+}
+
+.choose {
+  background-color: hsl(220, 85%, 29%);
+}
+.choose h2 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1.3125rem;
+}
+.choose h3 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1.3125rem;
+  font-size: 1.125rem;
+}
+.choose p {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1.5625rem;
+  font-size: 1rem;
+}
+@media (min-width: 64em) {
+  .choose {
+    text-align: center;
+    margin-bottom: 6.25rem;
+    padding-top: 3.625rem;
+    padding-bottom: 6.25rem;
+  }
+}
+.choose__intro {
+  margin-bottom: 1.75rem;
+}
+.choose__box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.875rem;
+}
+@media (min-width: 64em) {
+  .choose__box {
+    display: flex;
+  }
+}
+.choose__image {
+  grid-column: span 1;
+  height: 573px;
+  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-image: url("/assets/choose us.png");
+  border-radius: 8px;
+}
+@media (min-width: 64em) {
+  .choose__image {
+    width: 38.125rem;
+    flex: 1;
+  }
+}
+.choose__text {
+  text-align: left;
+  grid-column: span 1;
+}
+@media (min-width: 64em) {
+  .choose__text {
+    padding-top: 3.625rem;
+    padding-right: 4.6875rem;
+    padding-bottom: 7.5rem;
+    padding-left: 2.125rem;
+    flex: 1;
+  }
 }/*# sourceMappingURL=style.css.map */
