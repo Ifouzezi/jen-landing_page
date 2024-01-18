@@ -1,0 +1,63 @@
+.clients {
+
+    h2 {
+
+        @include breakpoint-up(medium){
+            max-width: 18rem;
+            margin: auto;
+            margin-bottom: 1.3125rem;
+        }
+    }
+    &__intro {
+        margin-bottom: 1.75rem;
+
+        @include breakpoint-up(medium){
+            max-width: 28rem;
+            margin: auto;
+        }
+    }
+
+    &__box {
+
+        @include breakpoint-up(medium){
+            display: grid;
+            text-align: center;
+            max-width: 66%;
+            margin: auto;
+        }
+    }
+
+    &__stories {
+        @include breakpoint-up(medium){
+            display: flex;
+            gap: 2.0625rem;
+        }
+        
+    }
+
+    &__icon {
+        display: grid;
+        justify-items: center;
+        padding-top: 3.375rem;
+        padding-right: 1.25rem;
+        padding-bottom: 4.0rem;
+        padding-left: 1.25rem;
+        height: 25.75rem;
+        background-color: $bgcolor;
+
+        &::after {
+            display: block;
+            width: 0;
+            content: "";
+            border-bottom: 0;
+        }
+    }
+
+    &__image1 {
+        background-image: url('/assets/Ellipse\ 26.png');
+    }
+
+    &__image2 {
+        background-image: url('/assets/Ellipse\ 25.png');
+    }
+}

@@ -110,10 +110,6 @@ html {
       padding-bottom: 6.25rem;
     }
   }
-
-  
-
-
   
   // Flexbox
  .flex{
@@ -276,12 +272,12 @@ ul li {
 
 ul li:before {
     content: "";
-  position: absolute;
-  left: -33px;
-  top: 0px;
-  width: 25px;
-  height: 113px;
-  background: url(/assets/bullet.svg);
+    position: absolute;
+    left: -33px;
+    top: 0px;
+    width: 25px;
+    height: 113px;
+    background: url(/assets/bullet.svg);
 }
 
 .custom-image {
@@ -293,6 +289,13 @@ ul li:before {
   border-radius: 0.5rem;
 }
 
-
+.clients-image {
+  height: 7.375rem;
+  width: 7.375rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-bottom: 1.5rem;
+}
 
 

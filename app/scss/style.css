@@ -317,6 +317,15 @@ ul li:before {
   border-radius: 0.5rem;
 }
 
+.clients-image {
+  height: 7.375rem;
+  width: 7.375rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-bottom: 1.5rem;
+}
+
 .header {
   background: hsl(216, 29%, 93%);
   font-size: 1rem;
@@ -792,4 +801,56 @@ ul li:before {
     max-width: 60%;
     margin: auto;
   }
+}
+@media (min-width: 40em) {
+  .clients h2 {
+    max-width: 18rem;
+    margin: auto;
+    margin-bottom: 1.3125rem;
+  }
+}
+.clients__intro {
+  margin-bottom: 1.75rem;
+}
+@media (min-width: 40em) {
+  .clients__intro {
+    max-width: 28rem;
+    margin: auto;
+  }
+}
+@media (min-width: 40em) {
+  .clients__box {
+    display: grid;
+    text-align: center;
+    max-width: 66%;
+    margin: auto;
+  }
+}
+@media (min-width: 40em) {
+  .clients__stories {
+    display: flex;
+    gap: 2.0625rem;
+  }
+}
+.clients__icon {
+  display: grid;
+  justify-items: center;
+  padding-top: 3.375rem;
+  padding-right: 1.25rem;
+  padding-bottom: 4rem;
+  padding-left: 1.25rem;
+  height: 25.75rem;
+  background-color: hsl(216, 29%, 93%);
+}
+.clients__icon::after {
+  display: block;
+  width: 0;
+  content: "";
+  border-bottom: 0;
+}
+.clients__image1 {
+  background-image: url("/assets/Ellipse 26.png");
+}
+.clients__image2 {
+  background-image: url("/assets/Ellipse 25.png");
 }/*# sourceMappingURL=style.css.map */
