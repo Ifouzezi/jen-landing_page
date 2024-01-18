@@ -1,5 +1,10 @@
 .choose {
-     
+    margin-bottom: 4rem;
+    @include breakpoint-up(medium){
+        text-align: left;
+        margin-bottom: 2.75rem;
+    }
+
     @include breakpoint-up(large){
         text-align: center;
         margin-bottom: 6.25rem;
@@ -55,6 +60,7 @@
 
         @include breakpoint-up(large) {
             display: flex;
+            gap: 0;
         }
     }
 
@@ -73,7 +79,6 @@
         }
 
         @include breakpoint-up(large) {
-            width: 38.125rem;
             flex: 1;
         }
     }
@@ -85,9 +90,9 @@
 
         @include breakpoint-up(large) {
             padding-top: 2.625rem;
-            padding-right: 4.6875rem;
+            padding-right: 2.688rem;
             padding-bottom: 7.5rem;
-            padding-left: 1.125rem;;
+            padding-left: 2.125rem;
             flex: 1;
         }
     }
