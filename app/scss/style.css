@@ -146,7 +146,7 @@ a:hover {
 }
 @media (min-width: 64em) {
   .mb {
-    padding-bottom: 6.25rem;
+    margin-bottom: 6.25rem;
   }
 }
 
@@ -676,7 +676,6 @@ ul li:before {
   .services {
     text-align: center;
     margin-bottom: 6.25rem;
-    padding-bottom: 6.25rem;
   }
 }
 .services h3 {
@@ -724,7 +723,6 @@ ul li:before {
 }
 .services__flex {
   display: grid;
-  text-align: center;
   justify-items: center;
 }
 @media (min-width: 40em) {
@@ -745,7 +743,7 @@ ul li:before {
 }
 @media (max-width: 39.9375em) {
   .services__th {
-    max-width: 20rem;
+    max-width: 19rem;
   }
 }
 .services__image1 {
@@ -810,21 +808,30 @@ ul li:before {
   }
 }
 .clients__intro {
-  margin-bottom: 1.75rem;
+  margin-bottom: 3.75rem;
 }
 @media (min-width: 40em) {
   .clients__intro {
     max-width: 28rem;
     margin: auto;
+    margin-bottom: 2.3125rem;
   }
 }
 @media (min-width: 40em) {
   .clients__box {
     display: grid;
     text-align: center;
-    max-width: 66%;
     margin: auto;
   }
+}
+@media (min-width: 64em) {
+  .clients__box {
+    max-width: 66%;
+  }
+}
+.clients__stories {
+  display: grid;
+  gap: 8rem;
 }
 @media (min-width: 40em) {
   .clients__stories {
@@ -832,7 +839,8 @@ ul li:before {
     gap: 2.0625rem;
   }
 }
-.clients__icon {
+.clients__con {
+  position: relative;
   display: grid;
   justify-items: center;
   padding-top: 3.375rem;
@@ -842,15 +850,81 @@ ul li:before {
   height: 25.75rem;
   background-color: hsl(216, 29%, 93%);
 }
-.clients__icon::after {
-  display: block;
-  width: 0;
+.clients__con::after {
   content: "";
-  border-bottom: 0;
+  position: absolute;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-top: 100px solid transparent;
+  bottom: -75px;
+  border-top-color: hsl(216, 29%, 93%);
+  left: calc(50% - 60px);
+}
+.clients__comments {
+  position: absolute;
+  top: -4.6rem;
 }
 .clients__image1 {
   background-image: url("/assets/Ellipse 26.png");
 }
 .clients__image2 {
   background-image: url("/assets/Ellipse 25.png");
+}
+
+.footer {
+  background-color: hsl(220, 85%, 29%);
+}
+.footer svg {
+  fill: hsl(0, 0%, 100%);
+}
+.footer p {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1.3125rem;
+}
+.footer__box {
+  display: grid;
+  text-align: center;
+  gap: 2rem;
+  padding-top: 2.375rem;
+}
+@media (min-width: 40em) {
+  .footer__box {
+    display: flex;
+    margin: auto;
+    max-width: 42.563rem;
+    padding-top: 6.25rem;
+    margin-bottom: 3.9375rem;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 64em) {
+  .footer__box {
+    max-width: 58.5625rem;
+  }
+}
+.footer__16 {
+  font-size: 1.1rem;
+}
+.footer__rights {
+  text-align: center;
+}
+@media (min-width: 40em) {
+  .footer__rights {
+    padding-bottom: 1.9375rem;
+  }
+}
+@media (max-width: 39.9375em) {
+  .footer__socials {
+    max-width: 55%;
+    margin: auto;
+    margin-bottom: auto;
+    margin-bottom: 1.5rem;
+  }
+}
+@media (min-width: 40em) {
+  .footer__socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }/*# sourceMappingURL=style.css.map */

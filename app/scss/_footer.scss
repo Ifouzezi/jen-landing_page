@@ -1,0 +1,61 @@
+.footer {
+    background-color: $brandcolor;
+
+    svg {
+        fill: $text2
+    }
+
+    p {
+        color: $text2;
+        margin-bottom: 1.3125rem;
+    }
+
+    &__box {
+        display: grid;
+        text-align: center;
+        gap: 2rem;
+        padding-top: 2.375rem;
+
+        @include breakpoint-up(medium){
+            display: flex;
+            margin: auto;
+            max-width: 42.563rem;
+            padding-top: 6.25rem;
+            margin-bottom: 3.9375rem;
+            justify-content: space-between;
+        }
+
+        @include breakpoint-up(large){
+            max-width: 58.5625rem;
+        }
+    }
+
+    &__16 {
+        font-size: 1.1rem;
+    }
+
+    &__rights {
+
+        text-align: center;
+
+        @include breakpoint-up(medium){
+        padding-bottom: 1.9375rem;
+        }
+    }
+
+    &__socials {
+
+        @include breakpoint-down(small){
+        max-width: 55%;
+        margin: auto;
+        margin-bottom: auto;
+        margin-bottom: 1.5rem;
+        }
+
+        @include breakpoint-up(medium){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+    }
+}

@@ -4,7 +4,6 @@
     @include breakpoint-up(large){
         text-align: center;
         margin-bottom: 6.25rem;
-        padding-bottom: 6.25rem;
     }
 
     h3 {
@@ -55,7 +54,6 @@
     &__flex {
 
         display: grid;
-        text-align: center;
         justify-items: center;
 
         @include breakpoint-up(medium){
@@ -75,7 +73,7 @@
         height: 5.625rem;
 
         @include breakpoint-down(small){
-            max-width: 20rem;
+            max-width: 19rem;
         }
     }
 
