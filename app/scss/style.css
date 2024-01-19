@@ -556,7 +556,7 @@ ul li:before {
 @media (min-width: 40em) {
   .feature__item {
     flex: 0 0 50%;
-    max-width: 20.917rem;
+    max-width: 32%;
   }
 }
 @media (min-width: 64em) {
