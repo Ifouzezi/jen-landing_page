@@ -62,6 +62,7 @@
             bottom: -75px;
             border-top-color: $bgcolor;
             left: calc(50% - 60px);
+            z-index: -1;
         }
     }
 

@@ -859,6 +859,7 @@ ul li:before {
   bottom: -75px;
   border-top-color: hsl(216, 29%, 93%);
   left: calc(50% - 60px);
+  z-index: -1;
 }
 .clients__comments {
   position: absolute;
